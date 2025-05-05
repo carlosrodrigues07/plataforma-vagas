@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Área do Empresário</title>
+  <link rel="stylesheet" href="/CSS/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Área do Empresário</h1>
+    <a href="index.html" class="admin-link">Voltar para Vagas</a>
+  </header>
+
+  <main>
+    <h2>Cadastrar Nova Vaga</h2>
+    <form id="form-vaga" class="form-vaga">
+      <label for="titulo">Título da Vaga:</label>
+      <input type="text" id="titulo" name="titulo" required />
+
+      <label for="descricao">Descrição:</label>
+      <textarea id="descricao" name="descricao" required></textarea>
+
+      <label for="requisitos">Requisitos:</label>
+      <textarea id="requisitos" name="requisitos" required></textarea>
+
+      <button type="submit">Cadastrar Vaga</button>
+    </form>
+  </main>
+
+  <script>
+    document.getElementById('form-vaga').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Vaga cadastrada com sucesso!');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
