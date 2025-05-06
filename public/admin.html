@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Área do Empresário</title>
-  <link rel="stylesheet" href="/CSS/style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
@@ -14,7 +14,7 @@
 
   <main>
     <h2>Cadastrar Nova Vaga</h2>
-    <form id="form-vaga" class="form-vaga">
+    <form id="form-vaga" class="form-vaga" action="/api/candidatar" method="POST">
       <label for="titulo">Título da Vaga:</label>
       <input type="text" id="titulo" name="titulo" required />
 
@@ -28,12 +28,12 @@
     </form>
   </main>
 
-  <script>
+  <!-- <script>
     document.getElementById('form-vaga').addEventListener('submit', function (e) {
       e.preventDefault();
       alert('Vaga cadastrada com sucesso!');
       this.reset();
     });
-  </script>
+  </script> -->
 </body>
 </html>
